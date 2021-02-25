@@ -1,0 +1,10 @@
+1. JavaScript Hoisting 
+2. JavaScript Compilation
+3. JavaScript Lexical Scoping
+4. Closures in JavaScript
+5. Context in JavaScript
+6. Prototype Keyword
+
+~ 95% JavaScript Concepts...
+
+
