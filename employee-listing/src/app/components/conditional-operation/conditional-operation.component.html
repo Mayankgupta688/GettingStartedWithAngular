@@ -1,0 +1,16 @@
+<div *ngIf="isSenior(); else lessThanRequired">
+    <h1>Welcome to the Content Page</h1>
+    <h2>This content is visible for age greater than equal to 18</h2>
+    <h3>Welcome to TechnoFunnel</h3>
+</div>
+
+<ng-template #lessThanRequired>
+    <div>
+        <h1>Your age is less than 18</h1>
+        <h2>You are not authorized to access the content</h2>
+    </div>
+</ng-template>
+
+
+<input type="number" #textInput />
+<input type="button" value="Change Age" (click)="updateAge(textInput.value)" />

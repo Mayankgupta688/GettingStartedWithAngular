@@ -1,0 +1,9 @@
+<h1>Employee List for TechnoFunnel</h1><hr/>
+
+<div *ngFor="let employee of employeeList">
+    <b>Employe Name: </b>{{employee.name}}<br/><br/>
+    <b *ngIf="employee.id">Employe Id: </b>{{employee.id}}<br/><br/>
+
+    <b [style.display]="employee.id ? 'inline': 'none'">Employe Age: </b>{{employee.id}}<hr/>
+</div>
+
