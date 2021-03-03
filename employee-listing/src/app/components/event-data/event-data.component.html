@@ -1,0 +1,21 @@
+<h1 [style.color]="colorInfo">This is Application Header</h1>
+
+<b>Using Events from Button Click</b><br/><br/>
+<input (click)="updateHeaderColorFromEvent($event)" style="color: red" type="button" value="Red" />
+<input (click)="updateHeaderColorFromEvent($event)" style="color: grey" type="button" value="Grey" />
+<input (click)="updateHeaderColorFromEvent($event)" style="color: green" type="button" value="Green" /><br/><br/>
+
+<b>Using Reference from Button Click Element</b><br/><br/>
+<input #colorred (click)="updateHeaderColorFromElement(colorred)" style="color: red" type="button" value="Red" />
+<input #colorgrey (click)="updateHeaderColorFromEvent(colorgrey)" style="color: grey" type="button" value="Grey" />
+<input #colorgreen (click)="updateHeaderColorFromEvent(colorgreen)" style="color: green" type="button" value="Green" /><br/><br/>
+
+<b>Sending Values to the Function...</b><br/><br/>
+
+<input (click)="updateHeaderColor($event.target.value.toLowerCase())" style="color: red" type="button" value="Red" />
+<input (click)="updateHeaderColor($event.target.value.toLowerCase())" style="color: grey" type="button" value="Grey" />
+<input (click)="updateHeaderColor($event.target.value.toLowerCase())" style="color: green" type="button" value="Green" /><br/><br/>
+
+<input (click)="updateHeaderColor('red')" style="color: red" type="button" value="Red" />
+<input (click)="updateHeaderColor('grey')" style="color: grey" type="button" value="Grey" />
+<input (click)="updateHeaderColor('green')" style="color: green" type="button" value="Green" /><br/><br/>

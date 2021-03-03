@@ -1,0 +1,17 @@
+<h1 [style.left]="leftSpacingForImage" [style.color]="headerColor">Working With Attribute Binding...</h1>
+
+<img bind-src="imageUrl" [style.left]="leftSpacingForImage" [alt]="altText" bind-title="title" [height]="imgHeight" width="{{imgWidth}}" /><br/><br/>
+
+<input type="button" [disabled]="buttonDisabled" [value]="buttonText" (click)="buttonClicked(username)" /><br/><br/>
+
+<input type="text" #username [disabled]="buttonDisabled" [placeholder]="inputBoxPlaceHolder"/><br/><hr/>
+
+<input (click)="updateHeaderColor('red')" style="color: red" type="button" value="Red" />
+<input (click)="updateHeaderColor('grey')" style="color: grey" type="button" value="Grey" />
+<input (click)="updateHeaderColor('green')" style="color: green" type="button" value="Green" /><br/><br/>
+
+<a [href]="googleUrl">Redirect To Google</a>
+
+<img bind-src="imageUrl" [style.left]="leftSpacingForImage"/><br/><br/>
+
+{{leftSpacingForImage}}

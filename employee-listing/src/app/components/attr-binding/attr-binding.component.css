@@ -1,0 +1,7 @@
+input[type=button] {
+    margin-right: 10px;
+}
+
+img, h1 {
+    position: relative;
+}
