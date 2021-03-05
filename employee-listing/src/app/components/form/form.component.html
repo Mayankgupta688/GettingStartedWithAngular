@@ -1,0 +1,18 @@
+<h1>Enter User Details...</h1>
+
+Age: <input type="text" [ngModel]="empAge" id="empAge" (ngModelChange)="updateData($event, empAgeDOM)" #empAgeDOM /><br/><br/>
+Name: <input type="text" [ngModel]="empName" id="empName" (ngModelChange)="updateData($event, empNameDOM)" placeholder="Enter Age of Employee" #empNameDOM /><br/><br/>
+Salary: <input type="text" [ngModel]="empSalary" id="empSalary" (ngModelChange)="updateData($event, empSalaryDOM)" placeholder="Enter Age of Employee" #empSalaryDOM /><br/><br/>
+Designation: <input type="text" [ngModel]="empDesignation"  (ngModelChange)="updateData($event, empDesignationDOM)" placeholder="Enter Age of Employee" #empDesignationDOM /><br/><br/>
+City: <input type="text" [ngModel]="empCity" (ngModelChange)="updateData($event, empCityDOM)" placeholder="Enter Age of Employee" #empCityDOM /><br/><br/>
+Country: <input type="text" [ngModel]="empCountry"  (ngModelChange)="updateData($event, empCountryDOM)" placeholder="Enter Age of Employee" #empCountryDOM /><br/><br/><hr/>
+
+
+<h1>Employee Details</h1>
+
+Age: {{empAge}}<br/><br/>
+Name: {{empName}}<br/><br/>
+Salary: {{empSalary}}<br/><br/>
+Designation: {{empDesignation}}<br/><br/>
+City: {{empCity}}<br/><br/>
+Country: {{empCountry}}<br/><br/>

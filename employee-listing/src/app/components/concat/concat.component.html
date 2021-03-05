@@ -1,0 +1,4 @@
+<h1>This Input Value is: <label style="color: red">{{userInput | concatLength | lowercase | replaceCharacter: "," : " "}}</label></h1>
+<input type="text" [(ngModel)]="userInput" />
+
+<input type="button" value="Get Data" (click)="getOriginalData()" />

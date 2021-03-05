@@ -1,0 +1,8 @@
+<h1>User Name in uppercase is: {{userName | uppercase}}</h1>
+<h1>User Name in lowercase is: {{userName | lowercase}}</h1>
+<h2>Welcome User: {{userName}}</h2><br/><br/>
+
+<h4>Employee Salary: {{userSalary | currency: "USD"}}</h4>
+<h5>Employee Salary without Filter: {{userSalary}}</h5>
+
+<input type="text" [(ngModel)]="userName" />

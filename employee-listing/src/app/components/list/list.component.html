@@ -1,0 +1,14 @@
+<div>
+    <hr/><hr/><hr/>
+    <h1>Company Manager Details:</h1>
+    <app-details [emp]="managerEmployee" [salutation]="salutation"></app-details>
+    <hr/><hr/>
+</div>
+
+<app-listheader></app-listheader>
+
+<div *ngFor="let employee of employeeList">
+    <app-details [salutation]="salutation" [emp]="employee" (deleteEmployeeEvent)="deleteEmployeeFromList($event)"></app-details>
+</div>
+
+<app-listfooter></app-listfooter>

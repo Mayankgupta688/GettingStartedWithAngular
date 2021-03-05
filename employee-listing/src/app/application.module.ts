@@ -13,10 +13,19 @@ import { TwoWayComponent } from './components/two-way/two-way.component';
 
 import { FormsModule } from "@angular/forms";
 import { TwoWayOtherComponent } from './components/two-way-other/two-way-other.component';
+import { FormComponent } from './components/form/form.component';
+import { FiltersComponent } from './components/filters/filters.component';
+import { ConcatComponent } from './components/concat/concat.component';
+import { ConcatLength } from "./pipes/concat.pipe";
+import { ReplaceCharacter } from "./pipes/replace.pipe";
+import { ListComponent } from './components/list/list.component';
+import { ListheaderComponent } from './components/listheader/listheader.component';
+import { ListfooterComponent } from './components/listfooter/listfooter.component';
+import { DetailsComponent } from './components/details/details.component'; 
 
 @NgModule({
-    declarations: [AppComponent, HomeComponent,FooterComponent, AddingFunctionComponent, TemplateReferenceComponent, AttrBindingComponent, EventDataComponent, ConditionalOperationComponent, DataIterationComponent, TwoWayComponent, TwoWayOtherComponent],
+    declarations: [ReplaceCharacter, AppComponent, HomeComponent,FooterComponent, AddingFunctionComponent, TemplateReferenceComponent, AttrBindingComponent, EventDataComponent, ConditionalOperationComponent, DataIterationComponent, TwoWayComponent, TwoWayOtherComponent, FormComponent, FiltersComponent, ConcatComponent, ConcatLength, ListComponent, ListheaderComponent, ListfooterComponent, DetailsComponent],
     imports: [BrowserModule, FormsModule],
-    bootstrap: [TwoWayOtherComponent]
+    bootstrap: [ListComponent]
 })
 export class ApplicationModule { }

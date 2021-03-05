@@ -14,7 +14,7 @@ export class TwoWayOtherComponent {
   empCity: any = "Delhi";
   empCountry: any = "India";
 
-  updateData(newValue) {
+  updateAge(newValue) {
     // Random Code
   }
 }
