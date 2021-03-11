@@ -1,0 +1,8 @@
+<div>
+
+    <app-filtering></app-filtering>
+
+    <div *ngFor="let employee of employeeList">
+        <app-empdetails [employee]="employee"></app-empdetails>
+    </div>
+</div>

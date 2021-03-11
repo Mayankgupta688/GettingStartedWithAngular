@@ -30,10 +30,16 @@ import { EmployeeCounterOtherComponent } from './components/employee-counter-oth
 import { RetrieveDataOtherComponent } from './components/retrieve-data-other/retrieve-data-other.component';
 import { DelayedComponentComponent } from './components/delayed-component/delayed-component.component'; 
 import { DelayedRenderingDirective } from "./directives/delay.rendering.directive";
+import { EmployeeListComponent } from './listing/employee-list/employee-list.component';
+import { FilteringComponent } from './listing/filtering/filtering.component';
+import { EmpdetailsComponent } from './listing/empdetails/empdetails.component';
+import { OninitComponent } from './input/oninit/oninit.component';
+import { ChildcomponentComponent } from './input/childcomponent/childcomponent.component';
+import { SampleComponent } from './input/sample/sample.component';
 
 @NgModule({
-    declarations: [ReplaceCharacter, AppComponent, HomeComponent,FooterComponent, AddingFunctionComponent, TemplateReferenceComponent, AttrBindingComponent, EventDataComponent, ConditionalOperationComponent, DataIterationComponent, TwoWayComponent, TwoWayOtherComponent, FormComponent, FiltersComponent, ConcatComponent, ConcatLength, ListComponent, ListheaderComponent, ListfooterComponent, DetailsComponent, RetrieveDataComponent, EmployeeCounterComponent, EmployeeCounterOtherComponent, RetrieveDataOtherComponent, DelayedComponentComponent, DelayedRenderingDirective],
+    declarations: [ReplaceCharacter, AppComponent, HomeComponent,FooterComponent, AddingFunctionComponent, TemplateReferenceComponent, AttrBindingComponent, EventDataComponent, ConditionalOperationComponent, DataIterationComponent, TwoWayComponent, TwoWayOtherComponent, FormComponent, FiltersComponent, ConcatComponent, ConcatLength, ListComponent, ListheaderComponent, ListfooterComponent, DetailsComponent, RetrieveDataComponent, EmployeeCounterComponent, EmployeeCounterOtherComponent, RetrieveDataOtherComponent, DelayedComponentComponent, DelayedRenderingDirective, EmployeeListComponent, FilteringComponent, EmpdetailsComponent, OninitComponent, ChildcomponentComponent, SampleComponent],
     imports: [BrowserModule, FormsModule, HttpClientModule],
-    bootstrap: [DelayedComponentComponent]
+    bootstrap: [OninitComponent]
 })
 export class ApplicationModule { }

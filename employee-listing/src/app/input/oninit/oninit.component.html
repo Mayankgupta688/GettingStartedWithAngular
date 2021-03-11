@@ -1,0 +1,6 @@
+<app-sample [userAge]="userAge"></app-sample>
+<h1>This is Available in Parent Component for {{userName}}</h1>
+<h2>Age in Parent Component: {{userAge}}</h2>
+<input type="button" value="Increment Age" (click)="updateAge()" /><br/>
+<input type="button" value="Increment Name" (click)="updateName()" /><br/>
+<app-childcomponent [userName]="userName" [userAge]="userAge"></app-childcomponent>
