@@ -1,0 +1,9 @@
+<div>
+    <h1>List of Employees is Given Below...</h1>
+    <app-employee-counter-other></app-employee-counter-other>
+
+    <div *ngFor="let emp of employeeList">
+        <label><b>Employee Name is: </b>{{emp.name}}</label><br/><br/>
+        <label><b>Employee Id is: </b>{{emp.id}}</label><hr/>
+    </div>
+</div>

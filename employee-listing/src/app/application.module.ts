@@ -1,5 +1,7 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { HttpClientModule } from "@angular/common/http";
+
 import { AppComponent } from "./components/app/app.component";
 import { HomeComponent } from "./components/home/home.component";
 import { FooterComponent } from "./components/footer/footer.component";
@@ -21,11 +23,17 @@ import { ReplaceCharacter } from "./pipes/replace.pipe";
 import { ListComponent } from './components/list/list.component';
 import { ListheaderComponent } from './components/listheader/listheader.component';
 import { ListfooterComponent } from './components/listfooter/listfooter.component';
-import { DetailsComponent } from './components/details/details.component'; 
+import { DetailsComponent } from './components/details/details.component';
+import { RetrieveDataComponent } from './components/retrieve-data/retrieve-data.component';
+import { EmployeeCounterComponent } from './components/employee-counter/employee-counter.component';
+import { EmployeeCounterOtherComponent } from './components/employee-counter-other/employee-counter-other.component';
+import { RetrieveDataOtherComponent } from './components/retrieve-data-other/retrieve-data-other.component';
+import { DelayedComponentComponent } from './components/delayed-component/delayed-component.component'; 
+import { DelayedRenderingDirective } from "./directives/delay.rendering.directive";
 
 @NgModule({
-    declarations: [ReplaceCharacter, AppComponent, HomeComponent,FooterComponent, AddingFunctionComponent, TemplateReferenceComponent, AttrBindingComponent, EventDataComponent, ConditionalOperationComponent, DataIterationComponent, TwoWayComponent, TwoWayOtherComponent, FormComponent, FiltersComponent, ConcatComponent, ConcatLength, ListComponent, ListheaderComponent, ListfooterComponent, DetailsComponent],
-    imports: [BrowserModule, FormsModule],
-    bootstrap: [ListComponent]
+    declarations: [ReplaceCharacter, AppComponent, HomeComponent,FooterComponent, AddingFunctionComponent, TemplateReferenceComponent, AttrBindingComponent, EventDataComponent, ConditionalOperationComponent, DataIterationComponent, TwoWayComponent, TwoWayOtherComponent, FormComponent, FiltersComponent, ConcatComponent, ConcatLength, ListComponent, ListheaderComponent, ListfooterComponent, DetailsComponent, RetrieveDataComponent, EmployeeCounterComponent, EmployeeCounterOtherComponent, RetrieveDataOtherComponent, DelayedComponentComponent, DelayedRenderingDirective],
+    imports: [BrowserModule, FormsModule, HttpClientModule],
+    bootstrap: [DelayedComponentComponent]
 })
 export class ApplicationModule { }
