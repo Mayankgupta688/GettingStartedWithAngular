@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Script Loading...</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>This is Dynamic Script Loading....</h1>
+      <input type="button" value="Click to Show Alert" onclick="updateUser()" />
+    </div>
+
+    <script>
+      setTimeout(() => {
+        var applicationScript = document.createElement("script");
+        applicationScript.setAttribute("src", "clickEvents1.js");
+        document.head.append(applicationScript);
+
+        var applicationScript = document.createElement("script");
+        applicationScript.setAttribute("src", "clickEvents2.js");
+        document.head.append(applicationScript);
+
+        var applicationScript = document.createElement("script");
+        applicationScript.setAttribute("src", "clickEvents3.js");
+        document.head.append(applicationScript);
+      }, 0)
+    </script>
+  </body>
+</html>

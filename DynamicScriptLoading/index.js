@@ -2,7 +2,7 @@ console.time("LoadingTime")
 
 function iterateData() {
   var result = 0;
-  for(let i = 0; i< 1000000000; i++) {
+  for(let i = 0; i< 3000000000; i++) {
     result += result/10;
   }
   console.log(result)
@@ -10,3 +10,7 @@ function iterateData() {
 
 iterateData();
 console.timeEnd("LoadingTime")
+
+function randomClick() {
+  alert("This is Button Click Event....")
+}
